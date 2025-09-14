@@ -23,3 +23,7 @@ pkg update && pkg upgrade -y
 pkg install python ffmpeg -y
 pip install --upgrade pip
 python3 pockerdnl.py
+```
+
+## Support
+[☕ Saweria](https://saweria.co/akbaraaja) | [❤️ Trakteer](https://trakteer.id/akbaraaja)
