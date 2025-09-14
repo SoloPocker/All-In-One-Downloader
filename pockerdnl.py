@@ -1,16 +1,4 @@
 #!/usr/bin/env python3
-"""
-All-in-One Media Downloader (Termux-friendly)
-Supports many platforms via yt-dlp.
-Features:
-- Auto-update yt-dlp
-- Auto-update script (if remote URL provided)
-- Playlist downloader
-- Custom filename template
-- Search mode (ytsearch)
-- Audio conversion (mp3, aac, wav, opus)
-"""
-
 from __future__ import annotations
 import os, sys, subprocess, shlex, urllib.request
 from pathlib import Path
@@ -21,15 +9,13 @@ from rich.panel import Panel
 from rich.prompt import Prompt, Confirm
 from rich.markdown import Markdown
 
-# === Config ===
 SAWERIA_URL = "https://saweria.co/akbaraaja"
 TRAKTEER_URL = "https://trakteer.id/akbaraaja"
 DOWNLOAD_DIR = Path("/sdcard/Download")
 YT_DLP_CMD = "yt-dlp"
 FFMPEG_CMD = "ffmpeg"
 
-# Optional: taruh link raw script di GitHub/Pastebin kalau mau auto-update script
-SCRIPT_UPDATE_URL = ""  
+SCRIPT_UPDATE_URL = "https://raw.githubusercontent.com/SoloPocker/All-In-One-Downloader/refs/heads/main/pockerdnl.py"  
 
 PLATFORMS = [
     ("1", "YouTube / Shorts / Music"),
@@ -51,7 +37,6 @@ PLATFORMS = [
 console = Console()
 DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
-# === Helpers ===
 def check_executable(name: str) -> bool:
     return any(os.access(os.path.join(path, name), os.X_OK)
                for path in os.environ.get("PATH", "").split(os.pathsep))
