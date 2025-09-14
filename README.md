@@ -2,6 +2,9 @@
 
 All-in-One media downloader (wrapper around `yt-dlp`) with interactive menu.
 
+## Preview
+![Preview](https://github.com/SoloPocker/All-In-One-Downloader/blob/main/Screenshot_20250914-081207.jpg)
+
 ## Features
 - Supports many platforms (YouTube, TikTok, Instagram, X/Twitter, Pinterest, Reddit, Vimeo, SoundCloud, etc.)
 - Playlist support and search mode (`ytsearch:`)
