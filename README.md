@@ -18,5 +18,4 @@ All-in-One media downloader (wrapper around `yt-dlp`) with interactive menu.
 pkg update && pkg upgrade -y
 pkg install python ffmpeg -y
 pip install --upgrade pip
-pip install -r requirements.txt
-python3 src/allinone_downloader.py
+python3 pockerdnl.py
