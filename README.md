@@ -19,3 +19,8 @@ pkg update && pkg upgrade -y
 pkg install python ffmpeg -y
 pip install --upgrade pip
 python3 pockerdnl.py
+
+![Python](https://img.shields.io/badge/python-3.x-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Termux%20%7C%20Linux%20%7C%20Windows-green)
+![License](https://img.shields.io/github/license/akbaraaja/All-In-One-Downloader)
+![Stars](https://img.shields.io/github/stars/akbaraaja/All-In-One-Downloader?style=social)
